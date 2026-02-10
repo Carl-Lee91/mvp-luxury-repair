@@ -28,6 +28,10 @@ export function QuoteFormWidget() {
       });
     } else if (currentStep === 2) {
       form.trigger("photos").then((isValid) => {
+        console.log("Step 2 Validation Result:", isValid);
+        if (!isValid) {
+          console.log("Step 2 Validation Errors:", form.formState.errors);
+        }
         if (isValid) nextStep();
       });
     }
