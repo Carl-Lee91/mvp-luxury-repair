@@ -32,7 +32,7 @@ export function HeroSection() {
             <Button
               size="lg"
               onClick={scrollToQuote}
-              className="bg-white text-black hover:bg-neutral-100 text-lg px-8 py-6 h-auto"
+              className="bg-white text-black hover:bg-neutral-100 text-lg px-8 py-6 h-16"
             >
               무료 견적 받기
               <ArrowDown className="ml-2 w-5 h-5" />
